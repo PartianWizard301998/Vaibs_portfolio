@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.card{
+    margin: 10px;
+    padding: 8px;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    background-color: #370854;
+    color: #FBF3D5;
+
+    opacity: 0;
+    transform: translateY(-100px); /* Slide in from the left */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+}
+.card.image{
+    width: 40px;
+    height: 40px;
+}
+.card-body{
+    padding: none;
+}
+
+
+h3{
+    margin-bottom: none;
+    font-weight: 600;
+}
+
+.section-tital{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    border-color: bisque;
+    border-width: 1px;
+}
+
+ /* State when the card is visible (in the viewport) */
+ .card.is-visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to normal position */
+  }
+  
+  /* State when the card is not visible (out of the viewport) */
+  .card.is-hidden {
+    opacity: 0;
+    transform: translateY(-100px); /* Slide out to the left */
+  }
+  

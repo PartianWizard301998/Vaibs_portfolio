@@ -1,0 +1,248 @@
+/* .section-tital{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.aboutme {
+    flex: 2;
+    padding: 15px;
+    align-items: center;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img:hover {
+    transform: scale(1.2);
+    border-color: bisque;
+    border-width: 1px;
+}
+
+p{
+    color: #FBF3D5;
+    font-size: large;
+} */
+
+.section-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100vh;  
+
+    @media (max-width: 1200px) {
+      .about-section {
+        margin-top: 50px; /* For smaller screens or zoomed-in views */
+      }
+    }
+}
+
+.aboutme {
+    flex: 1;
+    padding: 10px;
+}
+
+.aboutme h2 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.aboutme h2 img {
+    margin-left: 10px;
+}
+
+.aboutme p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.image img {
+    max-width: 100%;
+    min-width: 220px;
+    max-width: 320px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .aboutme h2 {
+        font-size: 1.8rem;
+    }
+
+    .aboutme p {
+        font-size: 1rem;
+    }
+}
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+
+.aboutme{
+  opacity: 0;
+  transform: translateY(-100px); /* Slide in from the left */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.aboutme.is-visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to normal position */
+}
+
+/* State when the card is not visible (out of the viewport) */
+.aboutme.is-hidden {
+  opacity: 0;
+  transform: translateY(-100px); /* Slide out to the left */
+}

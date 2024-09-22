@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col-md-8{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .card{
+    width: 100%;
+    height: fit-content;  
+    opacity: 0;
+  transform: translateY(-100px); 
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  /* State when the card is visible (in the viewport) */
+.card.is-visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to normal position */
+}
+
+/* State when the card is not visible (out of the viewport) */
+.card.is-hidden {
+  opacity: 0;
+  transform: translateY(-100px); /* Slide out to the left */
+}
+
+ 
+
+
+.section-title{
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}

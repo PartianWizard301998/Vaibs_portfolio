@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+h2{
+    .archivo-black-regular {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+color: #FF4E88;      
+}
+
+.container-fluid{
+    background-color: #E9EFEC;
+}
+/* 
+ul{
+    color: #1F6E8C;
+    
+} */
+
+h4,h3, li{
+    color: #1F6E8C;
+
+}
+
+#bottom{
+    color: #FF4E88;   
+}

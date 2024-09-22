@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bungee&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  
+}
+
+ .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;            
+    width: 100vw; 
+    flex-wrap: wrap; 
+}
+
+
+.photo {
+    /* flex: 1.5;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end; */
+
+    width: 100%;
+    max-width: 320px;
+    min-width: 220px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    
+
+}
+
+
+.introduction {
+    /* flex: 1.5; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    max-width: 600px;
+}
+
+
+
+#logo{
+    height: 30px;
+    width: 30px;
+}
+
+/* h1{
+    font-size: 45px;
+    font-weight: lighter;
+    font-family: "Bungee", sans-serif;
+    font-style: normal;
+    color: #EE4266;
+    
+}
+
+h2{
+    font-size: 28px;
+    color: #41C9E2;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+} */
+
+.introduction h1 {
+/* font-size: 42px;  */
+  font-size: 3rem; 
+  line-height: 1.2; /* Adjust line-height for better spacing */
+  font-weight: lighter;
+  font-family: "Bungee", sans-serif;
+  font-style: normal;
+  color: #EE4266;
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem; /* Decrease font size for mobile */
+      line-height: 1.4; /* Increase line-height to avoid overlap */
+      word-break: break-word; /* This ensures the text breaks smoothly if needed */
+  }
+}
+
+.introduction h3 {
+  /* font-size: 24px; */
+  font-size: 36px;
+}
+
+.introduction h2 {
+  font-size: 24px;
+  color: #41C9E2;
+    font-weight: bold;
+}
+
+.section-tital{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+  
