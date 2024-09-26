@@ -19,6 +19,7 @@ mat-vertical-stepper{
   text-align: center;
   font-size: 28px;
   font-weight: bold;
+  color: black;
 }
 
 .card{

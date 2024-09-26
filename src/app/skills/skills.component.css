@@ -19,6 +19,8 @@
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 
 }
+
+
 .card.image{
     width: 40px;
     height: 40px;
