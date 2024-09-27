@@ -23,8 +23,8 @@
   .photo {
     
       width: 100%;
-      max-width: 360px;
-      min-width: 250px;
+      max-width: 280px;
+      min-width: 200px;
       height: auto;
       border-radius: 50%;
       object-fit: cover;
@@ -89,6 +89,8 @@
     .container {
       height: 110vh;
     }
+
+   
 
     .photo img {
       width: 70%; /* Adjust this value as needed */
