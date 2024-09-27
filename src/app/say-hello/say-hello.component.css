@@ -1,12 +1,17 @@
   @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bungee&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
   .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100vh;  
+  }
+
+  a{
+    width: fit-content;
+    height: fit-content;
   }
 
   .flex-container {
@@ -38,7 +43,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 20px;
+      padding: 10px;
       max-width: 600px;
   }
 
@@ -77,6 +82,11 @@
     font-family: "Bungee", sans-serif;
     font-style: normal;
     color: #EE4266;
+    
+  background: -webkit-linear-gradient(#d09eca5d, #d33535d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
   }
 
   @media (max-width: 768px) {
@@ -100,18 +110,26 @@
     h3{
       font-size: 2rem;
     }
+
+    h2{
+      margin-bottom: 20px;
+    }
    
   }
 
   .introduction h3 {
-    /* font-size: 24px; */
-    font-size: 36px;
+    font-size: 24px;
+    font-weight: 500;
+
   }
 
   .introduction h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #41C9E2;
       font-weight: bold;
+      font-family: "Audiowide", sans-serif;
+      font-weight: 800;
+      font-style: normal;
   }
 
   .section-tital{
