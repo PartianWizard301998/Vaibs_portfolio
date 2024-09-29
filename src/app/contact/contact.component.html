@@ -1,17 +1,48 @@
-
+<!-- 
 <div class="container">
     <div class="form-container">
-        <div class="form">
-            <span class="heading">Get in touch</span>
-            <input placeholder="Name" type="text" class="input">
-            <input placeholder="Email" id="mail" type="email" class="input">
-            <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
-            <div class="button-container">
-            <div class="send-button">Send</div>
-            <div class="reset-button-container">
-                <div id="reset-btn" class="reset-button">Reset</div>
-            </div>
+      <div [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <span class="heading">Get in touch</span>
+       
+          <input formControlName="name" id="name" required placeholder="Name" class="input">
+        
+          <input formControlName="email" placeholder="Email" id="email" type="email" required class="input">
+        
+          <textarea formControlName="message" id="message" required></textarea>
+        
+          <div class="button-container">
+          <div class="send-button" (click)="onSubmit()">Send</div>
+
+          <div class="reset-button-container">
+            <div id="reset-btn" class="reset-button">Reset</div>
         </div>
+      </div>
     </div>
+</div> -->
+
+
+
+<div class="container p-5">
+  <div class="form-container">
+    <span class="heading">Get in touch</span>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input formControlName="name" id="name" required>
+      <div Class="text-danger mt-2" *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.hasError('required')">*Name is required</div>
     </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input formControlName="email" id="email" type="email" required>
+      <div Class="text-danger mt-2" *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.hasError('email')">*Enter Valid Email</div>
+      <div Class="text-danger mt-2" *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.hasError('required')">*Email is required</div>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea formControlName="message" id="message" required></textarea>
+      <div Class="text-danger mt-2" *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.hasError('required')">*Message is required</div>
+    </div>
+    <button type="submit" class="btn-submit">Send</button>
+  </form>
+  </div>
 </div>

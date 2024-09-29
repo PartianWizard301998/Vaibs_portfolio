@@ -82,10 +82,9 @@
     font-family: "Bungee", sans-serif;
     font-style: normal;
     color: #EE4266;
-    
-  background: -webkit-linear-gradient(#d09eca5d, #d33535d6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(#d09eca5d, #d33535d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   
   }
 

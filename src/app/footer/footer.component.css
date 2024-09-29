@@ -26,3 +26,17 @@ h4,h3, li{
 #bottom{
     color: #FF4E88;   
 }
+
+.list-unstyled a{
+    text-decoration: none;
+    color: #250835;
+    font-weight: 400;
+}
+
+li :hover{
+    
+    color: #c94521;
+    font-weight: 600;
+}
+
+

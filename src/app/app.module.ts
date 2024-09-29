@@ -23,7 +23,8 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { EducationComponent } from './education/education.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -51,8 +52,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatIconModule,
     MatStepperModule,
     BrowserAnimationsModule,
-   
-    
+    ReactiveFormsModule,
   ],
   providers: [
     provideClientHydration(),
@@ -60,4 +60,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  
+
+ }

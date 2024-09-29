@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .container{
   display: flex;
   flex-wrap: wrap;
@@ -40,4 +40,19 @@ transform: translateY(0); /* Move to normal position */
 .card.is-hidden {
 opacity: 0;
 transform: translateY(-100px); /* Slide out to the left */
+}
+
+
+.card h1{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+::ng-deep .custom-step .mat-step-label {
+  font-family: 'Arial', sans-serif; /* Example font style */
+  font-size: 16px;
+  font-weight: bold;
+  color: #c30000; /* Example color */
 }

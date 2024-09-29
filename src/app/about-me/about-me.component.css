@@ -1,9 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
 .section-title{
     text-align: center;
     font-size: 28px;
     font-weight: bold;
 }
+
+
 
 .aboutme h2 {
     display: flex;
@@ -17,12 +19,18 @@
 }
 
 .aboutme p {
+  
+ 
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+
 }
 
-
+container{
+  text-align: center;
+  height: 100vh
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
