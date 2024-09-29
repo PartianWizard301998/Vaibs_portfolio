@@ -24,9 +24,20 @@ export class ContactComponent {
 
 
 
+  // onSubmit(){
+  //   if(this.contactForm.valid){
+  //     this.http.post('http://localhost:3000/send-email',this.contactForm.value).subscribe(response =>{
+  //       alert("Email sent Successfully.");
+  //     }, error =>{
+  //       alert("Something went Wrong.");
+  //     })
+  //     this.contactForm.reset();
+  //   }
+  // }
+
   onSubmit(){
     if(this.contactForm.valid){
-      this.http.post('http://localhost:3000/send-email',this.contactForm.value).subscribe(response =>{
+      this.http.post('https://emailfeedbackbackend.onrender.com/send-email',this.contactForm.value).subscribe(response =>{
         alert("Email sent Successfully.");
       }, error =>{
         alert("Something went Wrong.");
