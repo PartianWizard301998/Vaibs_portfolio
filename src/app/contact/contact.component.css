@@ -177,14 +177,7 @@ textarea {
   }
 }
 
-.form-container {
-  max-width: 700px;
-  margin: 25px;
-  background-color: #012e43;
-  padding: 30px;
-  border-left: 5px solid #ff7a01;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
-}
+
 
 .heading {
   display: block;

@@ -1,6 +1,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bungee&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
   .container {
     display: flex;
     flex-direction: row;
@@ -76,15 +78,15 @@
 
   .introduction h1 {
   /* font-size: 42px;  */
-    font-size: 3.5rem; 
+    font-size: 4rem; 
     line-height: 1.2; /* Adjust line-height for better spacing */
-    font-weight: lighter;
-    font-family: "Bungee", sans-serif;
-    font-style: normal;
+   
     color: #EE4266;
-    background: -webkit-linear-gradient(#d09eca5d, #d33535d6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   
   }
 

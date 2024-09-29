@@ -12,3 +12,12 @@
     width: 30px;
 }
 
+.custom-offcanvas-width {
+    width: 200px; /* Reduce width to 200px */
+}
+
+@media (min-width: 576px) {
+    .custom-offcanvas-width {
+        width: 250px; /* Slightly larger width for larger mobile screens */
+    }
+}
